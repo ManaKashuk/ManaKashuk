@@ -26,14 +26,13 @@ const Hero = () => {
           </h1>
 
           <p className="font-subtitle text-base sm:text-lg text-foreground/85 tracking-[0.05em] mb-2 leading-relaxed">
-            Pharmaceutical Scientist | Research Operations | AI Strategist
+            Pharmaceutical Scientist | Commercialization Support | Scientific Documentation
           </p>
 
           <div className="w-10 h-0.5 bg-primary mx-auto md:mx-0 mb-5" />
 
           <p className="font-body text-sm text-muted-foreground max-w-lg leading-relaxed mb-8">
-            Building rigorous, compliance-aware, and translationally focused systems across science,
-            documentation, and innovation.
+           Supporting science, documentation, and innovation workflows across research, commercialization, and product-focused environments.
           </p>
 
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
