@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Luxurious+Script&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 220 10% 20%;
+
+    --card: 40 30% 98%;
+    --card-foreground: 220 10% 20%;
+
+    --popover: 40 30% 98%;
+    --popover-foreground: 220 10% 20%;
+
+    --primary: 40 40% 55%;
+    --primary-foreground: 40 33% 97%;
+
+    --secondary: 220 30% 25%;
+    --secondary-foreground: 40 33% 97%;
+
+    --muted: 40 20% 93%;
+    --muted-foreground: 220 8% 50%;
+
+    --accent: 40 35% 88%;
+    --accent-foreground: 220 10% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 40 40% 55%;
+
+    --radius: 0.375rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --font-signature: 'Luxurious Script', cursive;
+    --font-subtitle: 'Cinzel', serif;
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Inter', sans-serif;
+    --font-roman: 'Cinzel', serif;
+    .font-roman {
+     font-family: var(--font-roman);
+    }
+    --gold-50: 40 40% 96%;
+    --gold-100: 40 35% 88%;
+    --gold-200: 40 38% 75%;
+    --gold-400: 40 40% 55%;
+    --gold-600: 40 42% 42%;
+    --navy: 220 30% 25%;
+    --navy-light: 220 25% 35%;
+    --charcoal: 220 10% 20%;
+    --charcoal-light: 220 8% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+.font-signature {
+  font-family: var(--font-signature);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.font-subtitle {
+  font-family: var(--font-subtitle);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
