@@ -10,7 +10,7 @@ const featuredProject = {
   logo: bloomzLogo,
   image: bloomzMana,
   desc: "A scientific platform concept designed to help under-resourced labs translate spectral data into usable compound intelligence and clearer research outputs.",
-  url: "https://bloomzcore.streamlit.app/",
+  url: "https://bloomz.io/",
   awardTitle:
     "Recognized through pitch and startup innovation programs",
   awardNote:
