@@ -11,34 +11,24 @@ const featuredProject = {
   image: bloomzMana,
   desc: "A scientific platform built to help under-resourced labs translate spectral data into usable compound intelligence and clearer research outputs.",
   url: "https://bloomzcore.streamlit.app/",
+  awardTitle:
+    "Recognized through pitch and startup innovation programs",
+  awardNote:
+    "What began as a bottleneck in my PhD research evolved into a commercialization-oriented platform concept for under-resourced research environments. The project was further shaped through NSF I-Corps Southwest customer-discovery training and supported through the Howard University & PNC National Center for Entrepreneurship student innovation ecosystem.",
+  extraRecognition: [
+    {
+      label: "Prairie View A&M University × Texas Southern University Student Pitch Competition",
+      detail:
+        "Recognized for BLOOMZ CORE as a research-driven platform concept translating a real lab bottleneck into an innovation opportunity.",
+    },
+    {
+      label: "Nebius AI Discovery Award 2025 — Biotech Semifinalist",
+      detail:
+        "Bloomz.io was selected as a semifinalist in the Biotech category, placing among the startups advanced from a global pool of 257 applications.",
+      link: "https://nebius.com/ai-discovery-award-2025",
+    },
+  ],
 };
-
-const projects = [
-  {
-    name: "CLINIQ",
-    logo: cliniqLogo,
-    desc: "A platform for structured trial-integrity and compliance-aware workflow support in high-risk clinical and research environments.",
-    url: "https://cliniq-trial.streamlit.app/",
-  },
-  {
-    name: "RISe",
-    logo: riseLogo,
-    desc: "A compliance-aligned research support interface built around SOPs, FAQs, and structured guidance for research integrity workflows.",
-    url: "https://msu-rise-rs.streamlit.app/",
-  },
-  {
-    name: "Rice RBLP",
-    logo: riceRblpLogo,
-    desc: "A smart assistant tool supporting pre-award and post-award research administration workflows in a biotech innovation environment.",
-    url: "https://rice-rblgpt4.streamlit.app/",
-  },
-  {
-    name: "FORM-D",
-    logo: formdLogo,
-    desc: "A pharmacy education calculator app designed to support suppository base calculations through a structured, training-oriented workflow.",
-    url: "https://cophs-calculator.streamlit.app/",
-  },
-];
 
 const Projects = () => (
   <section id="projects" className="py-16 px-6 bg-muted/30">
