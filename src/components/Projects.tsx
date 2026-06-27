@@ -33,8 +33,10 @@ const projects = [
   {
     name: "CLINIQ",
     logo: cliniqLogo,
-    desc: "A platform for structured trial-integrity and compliance-aware workflow support in high-risk clinical and research environments.",
-    url: "https://cliniq-trial.streamlit.app/",
+    meta: "GCC REACH Stage 2",
+    desc: "A GCC REACH Stage 2 venture focused on trial-integrity workflows for high-risk clinical studies, combining product discovery, workflow optimization, customer validation, and SBIR/STTR readiness for future NIH funding pathways.",
+    url: "https://www.cliniqtrial.com/",
+    cta: "View project →",
   },
   {
     name: "RISe",
@@ -147,34 +149,33 @@ const Projects = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
         {projects.map((p) => (
           <div
-            key={p.name}
-            className="border border-border rounded-sm p-7 bg-card hover:border-primary/40 transition-colors flex flex-col"
-          >
-            <div className="min-h-[72px] flex items-center mb-5">
-              <img
-                src={p.logo}
-                alt={p.name}
-                className="max-h-14 w-auto object-contain"
-              />
-            </div>
-
-            <p className="font-body text-sm text-muted-foreground leading-relaxed flex-1">
-              {p.desc}
-            </p>
-
-            <a
-              href={p.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-4 font-body text-sm text-primary hover:text-foreground transition-colors"
-            >
-              Try the app →
-            </a>
+          key={p.name}
+          className="border border-border rounded-sm p-7 bg-card hover:border-primary/40 transition-colors flex flex-col"
+        >
+          <div className="min-h-[72px] flex items-center mb-5">
+            <img
+              src={p.logo}
+              alt={p.name}
+              className="max-h-14 w-auto object-contain"
+            />
           </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
-export default Projects;
+        
+          {p.meta && (
+            <p className="font-body text-[11px] uppercase tracking-[0.16em] text-primary mb-3">
+              {p.meta}
+            </p>
+          )}
+        
+          <p className="font-body text-sm text-muted-foreground leading-relaxed flex-1">
+            {p.desc}
+          </p>
+        
+          <a
+            href={p.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 font-body text-sm text-primary hover:text-foreground transition-colors"
+          >
+            {p.cta ?? "Try the app →"}
+          </a>
+        </div>
